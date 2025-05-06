@@ -1,0 +1,16 @@
+.area{
+    box-shadow: 10px 4px 10px rgba(0, 0, 0, 0.5);
+}
+.navbar-nav .nav-link {
+    transition: all 0.3s ease;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #0d6efd;
+    transform: translateY(-2px);
+  }
+  
+  .navbar-nav .active {
+    border-bottom: 2px solid #0d6efd;
+  }
+  

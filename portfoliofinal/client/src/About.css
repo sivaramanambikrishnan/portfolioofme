@@ -1,0 +1,148 @@
+/* About Section */
+
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem;
+    background-color: #f0f4f8;
+  }
+  
+  /* About Card */
+  .about-card {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 900px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 1s ease-out;
+  }
+  
+  /* Hover effect for the card */
+  .about-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Image Section */
+  .about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .about-image img {
+    width: 450px; 
+    height: 800px; 
+    border-radius: 20px; 
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 5px solidrgb(8, 9, 17); 
+  }
+  
+ 
+  .about-image img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2); 
+  }
+  
+
+  .about-content {
+    flex: 2;
+  }
+  
+  .about-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #2b2b2b;
+    margin-bottom: 1.5rem;
+  }
+  
+  .about-description {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+  }
+  
+  .about-skills {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .skill {
+    background-color: #e0e7ff;
+    padding: 0.6rem;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    color: blue;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .skill:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Animations */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Mobile view */
+  @media (max-width: 768px) {
+    .about-card {
+      flex-direction: column;
+      padding: 2rem;
+    }
+  
+    .about-image img {
+      width: 450px; 
+      height: 500px; 
+    }
+  
+    .about-title {
+      font-size: 2rem;
+    }
+  
+    .about-description {
+      font-size: 1rem;
+    }
+  
+    .about-skills {
+      gap: 0.8rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .about-title {
+      font-size: 1.6rem;
+    }
+    .about-image img {
+      width: 400px; 
+      height: 350px; 
+    }
+  
+    .about-description {
+      font-size: 0.95rem;
+    }
+  
+    .skill {
+      font-size: 0.85rem;
+    }
+  }
+  
