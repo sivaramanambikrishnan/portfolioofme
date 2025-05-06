@@ -6,7 +6,7 @@ const projects = [
     title: "Portfolio Website",
     description: "A personal portfolio site built with React, showcasing my skills and projects.",
     image: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=500",
-    link: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=500",
+    link: "https://github.com/sivaramanambikrishnan/portfolioofme",
     tags: ["React", "Bootstrap", "JavaScript","CSS"],
   },
   {
